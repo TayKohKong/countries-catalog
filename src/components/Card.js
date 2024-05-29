@@ -1,6 +1,6 @@
 const Card = ({country, onItemClick}) => {
   return (
-    <div className="mt-4 py-4 px-4 bg-whit w-80 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
+    <div className="mt-4 py-4 px-4 bg-whit w-full bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
       <img
         className="rounded-t-lg h-48 w-full"
         src={country.flags.png}

@@ -127,7 +127,7 @@
 .country {
   display: flex;
   flex-direction: column;
-  gap: calc(15px + 2vw);
+  gap: calc(15px + 1vw);
 }
 .country .flagWrapper {
   width: 100%;
@@ -142,7 +142,7 @@
 }
 
 .descCountry {
-  padding: 20px 0px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

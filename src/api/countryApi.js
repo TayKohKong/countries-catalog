@@ -4,8 +4,9 @@ const resFields = "name,altSpellings,flags,cca2,cca3,idd,population,capital,regi
 
 async function getAllCountry() {
     const url = `https://restcountries.com/v3.1/all?fields=${resFields}`;
+    const max = 10;
     let retry = 1;
-    while(retry <= 3) {
+    while(retry <= max) {
       try {
         const { data, status } = await axios.get(url);
         if (status === 200) {
@@ -13,7 +14,7 @@ async function getAllCountry() {
           }
         return [];
       } catch (error) {
-        if(retry === 3) {
+        if(retry === max) {
             return [{"error": `Api error`}];
         } else {
           retry++;
